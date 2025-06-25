@@ -1,4 +1,4 @@
-# YC Directory
+# YC Directory - Pitch Startup App
 
 YC Directory is a modern web application for pitching, voting, and growing startup ideas. Built with [Next.js](https://nextjs.org), [Sanity.io](https://www.sanity.io/), and [Tailwind CSS](https://tailwindcss.com/), it provides a beautiful, interactive platform for founders and enthusiasts to share and discover innovative projects.
 
@@ -69,7 +69,7 @@ assets/             # Fonts and design assets
 
 - **Custom Styling:** See [`app/globals.css`](app/globals.css) for utility classes and theme.
 - **Pitch Details:** Rendered with Markdown using [`markdown-it`](https://github.com/markdown-it/markdown-it).
-- **Editor Picks:** Curated via Sanity queries in [`app/(root)/startup/[id]/page.tsx`](app/(root)/startup/[id]/page.tsx).
+- **Editor Picks:** Curated via Sanity queries in [`app/(root)/startup/[id]/page.tsx`](<app/(root)/startup/[id]/page.tsx>).
 
 ---
 
