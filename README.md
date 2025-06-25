@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# YC Directory
 
-## Getting Started
+YC Directory is a modern web application for pitching, voting, and growing startup ideas. Built with [Next.js](https://nextjs.org), [Sanity.io](https://www.sanity.io/), and [Tailwind CSS](https://tailwindcss.com/), it provides a beautiful, interactive platform for founders and enthusiasts to share and discover innovative projects.
 
-First, run the development server:
+---
 
-```bash
+## ✨ Features
+
+- **Pitch Submission:** Submit your startup idea with rich Markdown support.
+- **Voting System:** Engage with the community by voting on pitches.
+- **Editor Picks:** Highlighted pitches curated by editors.
+- **User Profiles:** Showcase your submissions and activity.
+- **Responsive UI:** Sleek, mobile-friendly design using Tailwind CSS and custom utility classes.
+- **Authentication:** Secure login and user management with NextAuth.
+- **Analytics & Monitoring:** Integrated with Sentry for error tracking.
+- **Sanity CMS:** Manage content and pitches with a powerful headless CMS.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```sh
+git clone https://github.com/your-username/yc_directory.git
+cd yc_directory
+```
+
+### 2. Install dependencies
+
+```sh
+npm install
+# or
+yarn install
+```
+
+### 3. Configure Environment Variables
+
+Copy `.env.local.example` to `.env.local` and fill in the required values:
+
+```sh
+cp .env.local.example .env.local
+```
+
+Set up your Sanity and authentication credentials as needed.
+
+### 4. Run the development server
+
+```sh
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Project Structure
 
-## Learn More
+```
+app/                # Next.js app directory (routes, layouts, pages)
+components/         # Reusable React components (forms, cards, UI)
+lib/                # Utility functions, validation, and actions
+public/             # Static assets (images, icons)
+sanity/             # Sanity CMS configuration and queries
+assets/             # Fonts and design assets
+```
 
-To learn more about Next.js, take a look at the following resources:
+- **Custom Styling:** See [`app/globals.css`](app/globals.css) for utility classes and theme.
+- **Pitch Details:** Rendered with Markdown using [`markdown-it`](https://github.com/markdown-it/markdown-it).
+- **Editor Picks:** Curated via Sanity queries in [`app/(root)/startup/[id]/page.tsx`](app/(root)/startup/[id]/page.tsx).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧩 Key Technologies
 
-## Deploy on Vercel
+- [Next.js](https://nextjs.org/) (App Router)
+- [Sanity.io](https://www.sanity.io/) (Headless CMS)
+- [Tailwind CSS](https://tailwindcss.com/) (Utility-first CSS)
+- [NextAuth.js](https://next-auth.js.org/) (Authentication)
+- [Sentry](https://sentry.io/) (Error monitoring)
+- [Lucide Icons](https://lucide.dev/) (Icon library)
+- [Zod](https://zod.dev/) (Validation)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📦 Scripts
+
+- `npm run dev` – Start development server
+- `npm run build` – Build for production
+- `npm run start` – Start production server
+- `npm run lint` – Run ESLint
+
+---
+
+## 📝 Customization
+
+- **UI Components:** Built with [shadcn/ui](https://ui.shadcn.com/) and custom styles.
+- **Fonts:** Uses Work Sans, loaded via Next.js font optimization.
+- **Theming:** Easily customize colors and layout in [`tailwind.config.ts`](tailwind.config.ts).
+
+---
+
+## 🛡️ Deployment
+
+Deploy easily on [Vercel](https://vercel.com/) or your preferred platform.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please open issues and pull requests.
+
+---
+
+## 📄 License
+
+[MIT](LICENSE)
+
+---
+
+## 🙏 Acknowledgements
+
+- [Next.js](https://nextjs.org/)
+- [Sanity.io](https://www.sanity.io/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Sentry](https://sentry.io/)
+
+---
+
+> Made with ❤️ for the
