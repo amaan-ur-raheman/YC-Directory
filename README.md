@@ -22,7 +22,7 @@ YC Directory is a modern web application for pitching, voting, and growing start
 ### 1. Clone the repository
 
 ```sh
-git clone https://github.com/your-username/yc_directory.git
+git clone https://github.com/amaan-ut-raheman/YC-Directory.git
 cd yc_directory
 ```
 
